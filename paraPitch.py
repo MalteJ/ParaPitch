@@ -355,9 +355,6 @@ if __name__== "__main__":
     sys.setLines(lines)
     sys.setPilot(pilot)
 
-    sys.adjustCenterOfGravity()
-
-    sys.calculateState()
 
     #integrator = ForwardEuler()
     integrator = ClassicalRungeKutta()
@@ -368,6 +365,10 @@ if __name__== "__main__":
     integrator.time = -250.0
     sys.v = np.array((11.1,-1))
     sys.phi = 3.1/180*np.pi
+    
+    # Preparations for Solving
+    sys.adjustCenterOfGravity()
+    sys.calculateState()
 
     print("t,u,v,alpha,phi,gamma")
     for i in range(0,10000):
