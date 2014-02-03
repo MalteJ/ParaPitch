@@ -1,17 +1,17 @@
-###########################################
-#                ParaPitch                #
-###########################################
-#                                         #
-#   Copyright 2013 by Malte Janduda       #
-#   all rights reserved                   #
-#                                         #
-#   feel free to contact me!              #
-#   mail@malte-janduda.de                 #
-#                                         #
-###########################################
+#######################################################################
+#                              ParaPitch                              #
+#######################################################################
+#                                                                     #
+#   Copyright 2014 by Malte Janduda                                   #
+#   This work is licensed under the terms of the GNU GPL, version 3   #
+#   See the LICENSE file in the top-level directory                   #
+#                                                                     #
+#   feel free to contact me!                                          #
+#   mail@malte-janduda.de                                             #
+#                                                                     #
+#######################################################################
 
 import numpy as np
-from matplotlib import *
 
 class LinAlg:
     def rotate2d(vector, angle):
